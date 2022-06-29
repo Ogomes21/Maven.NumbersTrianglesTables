@@ -20,7 +20,7 @@ System.out.println(outcome);
         String Odd = "";
 
         for (int i = start; i < stop; i++) {
-            if (i % 3 == 0) {
+            if (i % 2 != 0) {
                 Odd += i;
             }
         }
@@ -42,28 +42,21 @@ System.out.println(outcome);
     }
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        return null;
+        int i = 0;
+
+        for (int i = start; i < stop; int step^=5);
+
+        return String;
     }
 
     public static String getRange(int start) {
-        String getRange = "";
-
-        for (int i = 0; i < ; i++) {
-
-        }
-        return getRange;
+        return null;
     }
 
     public static String getRange(int start, int stop) {
         return null;
     }
-    {
-        String getRange = "";
 
-        for (int i = start; i < int stop; i++) {
-
-        }
-    }
 
     public static String getRange(int start, int stop, int step) {
         return null;
