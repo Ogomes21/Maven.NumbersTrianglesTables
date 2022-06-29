@@ -46,13 +46,24 @@ System.out.println(outcome);
     }
 
     public static String getRange(int start) {
-        return null;
+        String getRange = "";
+
+        for (int i = 0; i < ; i++) {
+
+        }
+        return getRange;
     }
 
     public static String getRange(int start, int stop) {
         return null;
     }
+    {
+        String getRange = "";
 
+        for (int i = start; i < int stop; i++) {
+
+        }
+    }
 
     public static String getRange(int start, int stop, int step) {
         return null;
