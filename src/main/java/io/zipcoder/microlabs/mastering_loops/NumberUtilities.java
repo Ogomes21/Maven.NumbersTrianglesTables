@@ -17,53 +17,82 @@ Then
 System.out.println(outcome);
      */
     public static String getEvenNumbers(int start, int stop) {
-        String Odd = "";
-
-        for (int i = start; i < stop; i++) {
-            if (i % 2 != 0) {
-                Odd += i;
-            }
-        }
-
-        return Odd;
-    }
-
-
-    public static String getOddNumbers(int start, int stop) {
         String Even = "";
 
         for (int i = start; i < stop; i++) {
             if (i % 2 == 0) {
-                Even += i;
+                Even += Integer.toString(i);
             }
         }
 
         return Even;
     }
 
+
+    public static String getOddNumbers(int start, int stop) {
+        String Odd = "";
+
+        for (int i = start; i < stop; i++) {
+            if (i % 2 != 0) {
+                Odd += Integer.toString(i);
+            }
+        }
+
+        return Odd;
+    }
+
+    //Two integers, start, and stop,
+// Return String concatenation of all values squared between start up to and not including stop
     public static String getSquareNumbers(int start, int stop, int step) {
-        int i = 0;
+        String squared = "";
 
-        for (int i = start; i < stop; int step^=5);
+        for (int i = start; i < stop; i += step) {
+            squared += Integer.toString(i * i);
 
-        return String;
+        }
+        //return squared String
+        return squared;
     }
 
-    public static String getRange(int start) {
-        return null;
-    }
+    //given an integer, stop
+    //concatenate all integers b/t 0 up to stop (not including stop)
+    //return String concatenation
 
-    public static String getRange(int start, int stop) {
-        return null;
-    }
+    public static String getRange (int stop) {
+        String out = "";
+        for (int i = 0; i < stop; i++) {
+                out += i;
+            }
+            return out;
+        }
+
+        public static String getRange ( int start, int stop){
+        String out = "";
+
+        for (int i = start; i < stop; i++) {
+            out += i;
+        }
+
+        return out;
+        }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
-    }
+    String out = "";
+
+        for (int i = start; i < stop; i+=step) {
+            out += i;
+        }
+        return out; }
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        String out = "";
+
+        for (int i = start; i < stop; i += step) {
+            int value = (int)Math.pow(i, exponent);
+            out += Integer.toString(value);
+        }
+        return out;
     }
 }
